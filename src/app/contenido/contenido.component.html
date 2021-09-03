@@ -1,0 +1,19 @@
+<p>CONTENIDO</p>
+<p>PERSONAJES</p>
+
+<!-- NGFor para pintar los necesarios -->
+<div id="main-container">
+<div id="chars-container" *ngFor="let item of personajes">
+    <div class="char-container">
+    <img src="{{item.image}}" />
+    <br>
+    <p></p>
+    <div>{{item.id}}</div>
+    <br>
+    <div id="char-name">{{item.name}}</div>
+    <br>
+    <a href="/detalle">MÁS</a>
+    <br>
+</div>
+</div>
+</div>
